@@ -1,0 +1,80 @@
+.card {
+  $card: &;
+  padding: 3rem;
+  background-color: hsl(31, 77%, 52%);
+
+  &--middle {
+    background-color: hsl(184, 100%, 22%);
+
+    #{$card}__btn {
+      color: hsl(184, 100%, 22%);
+    }
+  }
+
+  &--right {
+    background-color: hsl(179, 100%, 13%);
+    border-radius: 0 0 0.5rem 0.5rem;
+
+    @media screen and (min-width: 768px) {
+      border-radius: 0 0.5rem 0.5rem 0;
+    }
+
+    #{$card}__btn {
+      color: hsl(179, 100%, 13%);
+    }
+  }
+
+  &--left {
+    border-radius: 0.5rem 0.5rem 0 0 ;
+
+    @media screen and (min-width: 768px) {
+      border-radius: 0.5rem 0 0 0.5rem;
+    }
+
+  }
+
+  &__img {
+    margin-bottom: 1.5rem;
+  }
+
+  &__title {
+    text-transform: uppercase;
+    color: hsl(0, 0%, 95%);
+    font-size: 2.3rem;
+  }
+
+  &__description {
+    color: hsla(0, 0%, 100%, 0.75);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Lexend Deca', sans-serif;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+
+    @media screen and (min-width: 768px) {
+      margin-bottom: 5.18rem;
+    }
+
+  }
+
+  &__btn {
+    display: inline-block;
+    margin-bottom: 6rem;
+    border: 2px solid hsl(0, 0%, 95%);
+    text-align: center;
+    padding: 12px 18px;
+    margin-bottom: 2rem;
+    border-radius: 30px;
+    background-color: rgb(245, 240, 245);
+    color: hsl(31, 77%, 52%);
+
+    &:hover {
+      background-color: transparent;
+      color: hsl(0, 0%, 95%);
+    }
+  }
+}
+
+
