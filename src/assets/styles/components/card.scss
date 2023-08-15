@@ -25,12 +25,11 @@
   }
 
   &--left {
-    border-radius: 0.5rem 0.5rem 0 0 ;
+    border-radius: 0.5rem 0.5rem 0 0;
 
     @media screen and (min-width: 768px) {
       border-radius: 0.5rem 0 0 0.5rem;
     }
-
   }
 
   &__img {
@@ -57,7 +56,6 @@
     @media screen and (min-width: 768px) {
       margin-bottom: 5.18rem;
     }
-
   }
 
   &__btn {
@@ -79,6 +77,3 @@
     }
   }
 }
-
-
-
